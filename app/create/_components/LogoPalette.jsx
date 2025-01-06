@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import HeadingDescription from "./HeadingDescription";
-import Lookup from "@/app/_data/Lookup";
+import LookUp from "@/app/_data/LookUp";
 import Colors from "@/app/_data/Colors";
 
 function LogoPalette({ onHandleInputChange, formData }) {
@@ -8,8 +8,8 @@ function LogoPalette({ onHandleInputChange, formData }) {
   return (
     <div className="my-10">
       <HeadingDescription
-        title={Lookup.LogoColorPaletteTitle}
-        description={Lookup.LogoColorPaletteDesc}
+        title={LookUp.LogoColorPaletteTitle}
+        description={LookUp.LogoColorPaletteDesc}
       />
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-5 mt-5">
