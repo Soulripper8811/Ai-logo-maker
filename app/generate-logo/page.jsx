@@ -1,6 +1,6 @@
 "use client";
 import React, { Suspense, useContext, useEffect, useState } from "react";
-import Lookup from "../_data/Lookup";
+import LookUp from "../_data/LookUp";
 import Prompt from "../_data/Prompt";
 import axios from "axios";
 import Image from "next/image";
@@ -62,11 +62,11 @@ const GenerateLogo = () => {
       {!loading&&<Image src={logoImage} alt='logo' width={200} height={200} />} */}
 
         <h2 className="font-bold text-3xl text-primary">
-          {Lookup.LoadingWaitTitle}
+          {LookUp.LoadingWaitTitle}
         </h2>
         {loading && (
           <div className="flex flex-col items-center mt-2">
-            <p className="text-xl text-gray-500">{Lookup.LoadingWaitDesc}</p>
+            <p className="text-xl text-gray-500">{LookUp.LoadingWaitDesc}</p>
             <LoaderIcon className="animate-spin" />
             <Image
               src={"/loading.gif"}
