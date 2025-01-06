@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import HeadingDescription from "./HeadingDescription";
-import Lookup from "@/app/_data/Lookup";
+import LookUp from "@/app/_data/LookUp";
 import axios from "axios";
 import Prompt from "@/app/_data/Prompt";
 import { Loader2Icon } from "lucide-react";
@@ -36,8 +36,8 @@ function LogoIdea({ formData, onHandleInputChange }) {
   return (
     <div className="my-10">
       <HeadingDescription
-        title={Lookup.LogoIdeaTitle}
-        description={Lookup.LogoIdeaDesc}
+        title={LookUp.LogoIdeaTitle}
+        description={LookUp.LogoIdeaDesc}
       />
       <div className="flex items-center justify-center">
         {loading && <Loader2Icon className="animate-spin my-10" />}
